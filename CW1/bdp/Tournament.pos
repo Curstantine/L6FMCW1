@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Proof_Obligations xmlns="https://www.atelierb.eu/Formats/pog" version="1.0" author="pmi2Pos">
+<Proof_Obligation>
+<Tag>Initialisation</Tag>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>Operation_setPlayers</Tag>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>Operation_setupMatch</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>Operation_undo</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>Operation_nextGame</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>Operation_restart</Tag>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Invariant is preserved</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessInvariant</Tag>
+<Simple_Goal status="Proved">
+<Tag>Invariant is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinedness_setPlayers</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinednessPrecondition_setupMatch</Tag>
+<Simple_Goal status="Proved">
+<Tag>Operation precondition is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation precondition is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation precondition is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation precondition is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinedness_setupMatch</Tag>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinedness_undo</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinedness_proceed</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+<Proof_Obligation>
+<Tag>WellDefinedness_nextGame</Tag>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+<Simple_Goal status="Proved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Proved(Rapide)" methodList="pr" passList="Force(Rapide),?"/>
+</Simple_Goal>
+<Simple_Goal status="Unproved">
+<Tag>Operation is well defined</Tag>
+<Proof_State proofState="Unproved" methodList="?" passList="Force(0),(?; Rapide)"/>
+</Simple_Goal>
+</Proof_Obligation>
+</Proof_Obligations>
