@@ -114,32 +114,37 @@ OPERATIONS
         IF phase /= Setup THEN
             report := wrongPhase
         ELSE
-            LET p1, p2, scheduledPairs, t1, t2 BE 
+            LET p1, p2, scheduledPairs BE 
                 p1 = prj1(PLAYERS, PLAYERS)(players) & 
                 p2 = prj2(PLAYERS, PLAYERS)(players) &
-                scheduledPairs = ran(matches) &
-                t1 = teamPlayers~(p1) &
-                t2 = teamPlayers~(p2)
+                scheduledPairs = ran(matches)
             IN
-                IF (p1 |-> p2 : scheduledPairs) or (p2 |-> p1 : scheduledPairs) THEN
-                    report := matchAlreadyScheduled
-                ELSIF t1 = t2 THEN
-                    report := playersInSameTeam
-                ELSIF card({p1} <| scheduledPairs \/ scheduledPairs |> {p1}) >= 6 or
-                      card({p2} <| scheduledPairs \/ scheduledPairs |> {p2}) >= 6 THEN
-                    report := playerMaxScheduled
-                    // (prj1 = t1 & prj2 = t2) OR (prj1 = t2 & prj2 = t1) fn over scheduledPairs
-                    // to check if either teams of the pairs of players in collective has >= 12 matches.
-                ELSIF card({ pair | pair : scheduledPairs & 
-                            ((teamPlayers~(prj1(PLAYERS, PLAYERS)(pair)) = t1 & 
-                              teamPlayers~(prj2(PLAYERS, PLAYERS)(pair)) = t2) or
-                             (teamPlayers~(prj1(PLAYERS, PLAYERS)(pair)) = t2 & 
-                              teamPlayers~(prj2(PLAYERS, PLAYERS)(pair)) = t1)) }) >= 12 THEN
-                    report := teamMaxScheduled
-                ELSE
-                    // Append match to the sequence
-                    matches := matches <- (p1 |-> p2) ||
-                    report := success
+                // Needs to break down into two LET statements, 
+                // as ProB doesn't allow "complex" LET statements without configuring the application.
+                LET t1, t2 BE
+                    t1 = teamPlayers~(p1) &
+                    t2 = teamPlayers~(p2)
+                IN
+                    IF (p1 |-> p2 : scheduledPairs) or (p2 |-> p1 : scheduledPairs) THEN
+                        report := matchAlreadyScheduled
+                    ELSIF t1 = t2 THEN
+                        report := playersInSameTeam
+                    ELSIF card({p1} <| scheduledPairs \/ scheduledPairs |> {p1}) >= 6 or
+                          card({p2} <| scheduledPairs \/ scheduledPairs |> {p2}) >= 6 THEN
+                        report := playerMaxScheduled
+                        // (prj1 = t1 & prj2 = t2) OR (prj1 = t2 & prj2 = t1) fn over scheduledPairs
+                        // to check if either teams of the pairs of players in collective has >= 12 matches.
+                    ELSIF card({ pair | pair : scheduledPairs & 
+                                ((teamPlayers~(prj1(PLAYERS, PLAYERS)(pair)) = t1 & 
+                                  teamPlayers~(prj2(PLAYERS, PLAYERS)(pair)) = t2) or
+                                 (teamPlayers~(prj1(PLAYERS, PLAYERS)(pair)) = t2 & 
+                                  teamPlayers~(prj2(PLAYERS, PLAYERS)(pair)) = t1)) }) >= 12 THEN
+                        report := teamMaxScheduled
+                    ELSE
+                        // Append match to the sequence
+                        matches := matches <- (p1 |-> p2) ||
+                        report := success
+                    END
                 END
             END
         END
@@ -179,10 +184,9 @@ OPERATIONS
             report := noMatchesToPlay
         ELSE
             // Play the first scheduled game; more skilled player always wins
-            LET firstMatch, p1, p2 BE
-                firstMatch = first(matches) &
-                p1 = prj1(PLAYERS, PLAYERS)(firstMatch) &
-                p2 = prj2(PLAYERS, PLAYERS)(firstMatch)
+            LET p1, p2 BE
+                p1 = prj1(PLAYERS, PLAYERS)(first(matches)) &
+                p2 = prj2(PLAYERS, PLAYERS)(first(matches))
             IN
                 IF playerAbility(p1) > playerAbility(p2) THEN
                     LET t1 BE t1 = teamPlayers~(p1) IN
