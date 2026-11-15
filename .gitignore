@@ -1,0 +1,21 @@
+# Atelier B generated database, proof obligations, and temp/lock files
+**/bdp/
+.usedby_*
+
+# Atelier B generated target-language output
+**/lang/
+
+# Machine-specific Atelier B project descriptors (contains local absolute paths & username)
+*.desc
+
+# ProB / Graphviz exported diagrams (optional: remove if you want to keep exported graphs)
+*.dot
+
+# ProB saved states/traces (optional: comment out if you want to share *.prob files)
+# *.prob
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/

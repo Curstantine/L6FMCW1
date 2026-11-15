@@ -57,6 +57,46 @@ VARIABLES
     pScores,
     teamScores
 
+DEFINITIONS
+    "LibraryStrings.def";
+    C1(s) == STRING_PADLEFT(s, 11, " ");
+    C2(s) == STRING_PADLEFT(s, 9, " ");
+    C3(s) == STRING_PADLEFT(s, 9, " ");
+    C4(s) == STRING_PADLEFT(s, 8, " ");
+    C5(s) == STRING_PADLEFT(s, 22, " ");
+    ANIMATION_FUNCTION ==
+        {
+            (1, 1) |-> C1("PHASE"),
+            (1, 2) |-> C2(TO_STRING(phase)),
+            (1, 3) |-> C3("REMAINING"),
+            (1, 4) |-> C4(TO_STRING(size(matches))),
+            (1, 5) |-> C5(IF matches = [] THEN "NEXT: -" ELSE STRING_APPEND(TO_STRING(prj1(PLAYERS, PLAYERS)(first(matches))), STRING_APPEND(" v ", TO_STRING(prj2(PLAYERS, PLAYERS)(first(matches))))) END),
+
+            (2, 1) |-> C1("TEAM SCORES"),
+            (2, 2) |-> C2(STRING_APPEND("Red: ", TO_STRING(teamScores(Red)))),
+            (2, 3) |-> C3(STRING_APPEND("Green: ", TO_STRING(teamScores(Green)))),
+            (2, 4) |-> C4(STRING_APPEND("Blue: ", TO_STRING(teamScores(Blue)))),
+            (2, 5) |-> C5(""),
+
+            (3, 1) |-> C1("PLAYER"),
+            (3, 2) |-> C2("ABILITY"),
+            (3, 3) |-> C3("TEAM"),
+            (3, 4) |-> C4("SCORE"),
+            (3, 5) |-> C5("MATCHES")
+        } \/
+        { r, c, v |
+            r : 4..15 & c : 1..5 &
+            #pp.(pp : PLAYERS & r = 16 - playerAbility(pp) &
+                (
+                    (c = 1 & v = C1(TO_STRING(pp))) or
+                    (c = 2 & v = C2(TO_STRING(playerAbility(pp)))) or
+                    (c = 3 & ((pp : ran(teamPlayers) & v = C3(TO_STRING(teamPlayers~(pp)))) or (pp /: ran(teamPlayers) & v = C3("-")))) or
+                    (c = 4 & v = C4(TO_STRING(pScores(pp)))) or
+                    (c = 5 & v = C5(TO_STRING(card({pp} <| ran(matches) \/ ran(matches) |> {pp}))))
+                )
+            )
+        }
+
 INVARIANT
     teamPlayers : TEAMS <-> PLAYERS &
     teamPlayers~ : PLAYERS +-> TEAMS &
