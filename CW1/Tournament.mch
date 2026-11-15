@@ -58,6 +58,8 @@ VARIABLES
     teamScores
 
 DEFINITIONS
+    // LibraryString.def is a ProB specific definition that will error out in AterlierB.
+    // https://prob.hhu.de/w/index.php/External_Functions
     "LibraryStrings.def";
     C1(s) == STRING_PADLEFT(s, 11, " ");
     C2(s) == STRING_PADLEFT(s, 9, " ");
@@ -223,7 +225,6 @@ OPERATIONS
         ELSIF matches = [] THEN
             report := noMatchesToPlay
         ELSE
-            // Play the first scheduled game; more skilled player always wins
             LET p1, p2 BE
                 p1 = prj1(PLAYERS, PLAYERS)(first(matches)) &
                 p2 = prj2(PLAYERS, PLAYERS)(first(matches))
